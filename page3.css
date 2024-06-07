@@ -54,6 +54,7 @@ font-size: 1.5rem;
     width: 15rem;
     background-color: green;
     color: white;
+    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -67,14 +68,13 @@ font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 .page3 .map{
-    padding: 6rem;
+    padding-top: 6rem;
     background-color: rgb(248, 242, 242);
 }
 .page3 .map .mapborder{
     border: 15px solid white;
     border-radius: 15px;
-    margin-top: 4rem;
-    margin-left: 45%;
+    margin: 4rem auto 6rem 36rem;
     display: inline-block;
 }
 .page3 .contactform{
@@ -92,12 +92,13 @@ font-size: 1.5rem;
     font-size: 13px;
     font-family: sans-serif;
 }
-.page3 .contactform button{
+.page3 .contactform .button{
     background-color: #ff204e;
     color: white;
     width: 100%;
     padding: 1rem 0;
     border: none;
+    cursor: pointer;
 }
 .contactform .box{
     border: 1px solid rgb(224, 221, 221);
@@ -148,16 +149,18 @@ footer .box input{
     padding: 10px 15px;
     outline: none;
     border: none;
+    color: white;
 }
 footer .box input::placeholder{
     color: white;
 }
 
-footer .box span{
+footer .box #footerbutton{
     text-align: center;
     padding: 10px 2.5rem;
     background-color: white;
     color: #ff204e;
+    cursor: pointer;
     border-radius: 10px;
 }
 

@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="page2.css" />
     <link rel="stylesheet" href="page3.css" />
+    <script src="index.js" defer></script>
     <title>Project</title>
   </head>
   <body>
-    <main class="page1">
+    <main class="page1" id="page1">
         <div class="topmost">
         <header>
             <h1>SPECIAL</h1>
             <nav>
                 <ul>
-                    <li>HOME</li>
-                    <li>FEATURES</li>
-                    <li>GALLERY</li>
-                    <li>TESTIMONIALS</li>
-                    <li>CONTACT</li>
+                    <li><a href="#page1">HOME</a></li>
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#testimonials">TESTIMONIALS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                     <li>DOWNLOAD</li>
                 </ul>
             </nav>
@@ -51,7 +52,7 @@
             </div>
         </div>
     </div>
-        <div class="part3">
+        <div class="part3" id="features">
             <div class="top">
                 <h3>CORE <span>FEATURES</span></h3>
                 <P>There are many variations of passages of Lorem Ipsum available,</P>
@@ -123,7 +124,7 @@
                 <p>Social Sharings</p>
             </div>
         </div>
-        <div class="screenshots">
+        <div class="screenshots" id="gallery">
             <div class="text">
                 <h3>APP <span>SCREENSHOTS</span></h3>
                 <p>There are many variations of passages of Lorem Ipsum available,</p>
@@ -177,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <div class="bottom">
+        <div class="bottom" id="testimonials">
             <div class="play">
                 <i class='bx bx-play-circle'></i>
             </div>
@@ -247,39 +248,38 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3722.1087029649148!2d79.10611107430847!3d21.108231985046068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDA2JzI5LjYiTiA3OcKwMDYnMzEuMyJF!5e0!3m2!1sen!2sin!4v1717667767802!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </div>
-        <div class="contactform">
+        <form class="contactform" id="contact">
             <div class="form">
             <div class="box">
-                <input type="text" placeholder="Your Name"><i class='bx bxs-user'></i>
+                <input type="text" id="name" required placeholder="Your Name"><i class='bx bxs-user'></i>
             </div>
             <div class="box">
-                <input type="email" placeholder="Your Email"><i class='bx bx-envelope' ></i>
+                <input type="email" id="email" required placeholder="Your Email"><i class='bx bx-envelope' ></i>
             </div>
             <div class="box">
-                <input type="text" placeholder="Your Website"><i class='bx bx-globe'></i>
+                <input type="url" id="website" required placeholder="Your Website"><i class='bx bx-globe'></i>
             </div>
             </div>
-            <textarea name="" id="" placeholder="Enter a message"></textarea>
-            <button type="button">Send Message</button>
-        </div>
-
+            <textarea name="" id="message" required placeholder="Enter a message"></textarea>
+            <input type="submit" class="button" value="Send Message"></input>
+        </form>
     </main>
-<footer>
-    <div class="text">
-        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
-        <p>There are many variations of passages of Lorem Ipsum available,</p>
-        <P>but the majority have suffered alteration in some form, by injected humour,available</P>
-    </div>
-    <div class="box">
-        <input type="text" placeholder="Enter Your Email Address"><span>SUBMIT</span>
-    </div>
-    <div class="socialmedia">
-        <i class='bx bxl-linkedin'></i>
-        <i class='bx bxl-twitter' ></i>
-        <i class='bx bxl-facebook' ></i>
-        <i class='bx bxl-behance'></i>
-        <i class='bx bxl-google-plus' ></i>
-    </div>
-</footer>
+    <footer>
+        <div class="text">
+            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <p>There are many variations of passages of Lorem Ipsum available,</p>
+            <P>but the majority have suffered alteration in some form, by injected humour,available</P>
+        </div>
+        <form class="box submitemail">
+            <input type="email" id="footeremail" required placeholder="Enter Your Email Address"><input type="submit" id="footerbutton" value="SUBMIT"></input>
+        </form>
+        <div class="socialmedia">
+            <i class='bx bxl-linkedin'></i>
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-facebook' ></i>
+            <i class='bx bxl-behance'></i>
+            <i class='bx bxl-google-plus' ></i>
+        </div>
+    </footer>
   </body>
 </html>
